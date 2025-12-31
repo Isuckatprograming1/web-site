@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="Style-Contacts.css">
+    <title>Document</title>
+</head>
+<body>
+   
+ <div class="menu">
+     <header class="header">
+    <div class="top-bar">
+        <h2 class="name">WORLD CULTURES – КУЛТУРИ И ТРАДИЦИИ</h2>
+
+        <nav class="news-search">
+    <a href="news.html" class="news-link">Новини</a>
+
+   <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Търсене...">
+    <button class="btn" onclick="Search()">
+        <span>🔍︎</span> Търси 
+    </button>
+</div>
+</nav>
+    </div>
+</header>
+    </div>
+     <div class="menu-background">
+    <div class="pic">
+    </div>
+        </div>
+    </div>
+    </div>
+    <div class="menu">
+    <div class="menu-1">
+     <a href="kursova.html" class="menu-link">Начало</a>
+           <a href="about-us.html" class="menu-link">За нас</a>
+        <a href="News.html" class="menu-link">Новини</a>
+        <a href="Travel.html" class="menu-link">Екскурзии</a>
+        <a href="Gallery.html" class="menu-link">Галерия</a>
+        <a href="Contacts.html" class="menu-link">Контакти</a>
+    </div>
+</div>
+ <div class="Kontakti-title">
+        <h2 class="title-kon">Контакти</h2>
+    </div>
+<div class="main-content-wrapper">
+    
+    <div class="karta">
+        <iframe  class = "kartaa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d727.0051087884481!2d27.92358229610248!3d43.209060717127485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sbg!2sbg!4v1767181919443!5m2!1sbg!2sbg" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="text-pod-text">
+            <h2 class="text-pod">Свържете се с нас</h2>
+            <p class="mini-pod-text"> Телефон за връзка: 088 123 4567</p>
+        </div>
+    </div>
+ <div class="textField-con">
+            <form action="#">
+                <label for="fname" class="label-contact">Име</label><br>
+                <input type="text" id="fname" name="fname" class="input-contact" placeholder="Вашето име..">
+                
+                <label for="lname" class="label-contact">Фамилия</label><br>
+                <input type="text" id="lname" name="lname" class="input-contact" placeholder="Вашата фамилия..">
+                
+                <label for="email" class="label-contact">Имейл</label><br>
+                <input type="text" id="email" name="email" class="input-contact" placeholder="Вашият имейл..">
+                
+                <label for="subject" class="label-contact">Съобщение</label><br>
+                <textarea id="subject" name="subject" class="textarea-contact" placeholder="Напишете вашето съобщение.." style="height:100px"></textarea>
+                
+                <input type="submit" value="Изпрати" class="submit-contact">
+            </form>
+        </div>
+    <div class="contact-con">
+        <div class="text-contact-box">
+            <h2 class="text">Ние сме тук, за да помогнем!</h2>
+            <p class="mini-contact-text">Уведомете ни как можем да ви бъдем най-полезни. Използвайте формата за контакт, за да ни изпратите имейл, или изберете от темите по-долу тази, която най-добре отговаря на вашите нужди.</p>
+        </div>
+
+       
+    </div>
+</div>
+<footer class="site-footer">
+    <nav class="footer-nav">
+        <ul class="footer-cont">
+             <li class="footer-item"><a href="about-us.html">За нас</a></li>
+            <li class="footer-item"><a href="Contacts.html">Контакти</a></li>
+            <li class="footer-item"><a href="News.html">Новини</a></li>
+            <li class="footer-item"><a href="Gallery.html">Галерия</a></li> 
+            <p class="tekst-soc">Социални мрежи:</p>
+            <div class="socialni-mreji">
+	<a href="https://www.facebook.com/varna365" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/varna365/" class="fa fa-instagram"></a>
+	 <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+	</div>
+        </ul>
+    </nav>
+
+    <p class="copyright">
+        ИУ – Варна © Ванина Коева 2025
+    </p>
+    </footer>
+   <script>
+   function Search() {
+    let input = document.getElementById('searchInput');
+    let query = input.value.trim();
+    if (query === "") {
+        alert("Моля, въведете дума за търсене!");
+        return;
+    }
+    alert("Търсене за: " + query);
+}
+document.getElementById('searchInput').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') 
+    {
+        Search();
+    }
+});
+</script>
+</body>
+</html>
